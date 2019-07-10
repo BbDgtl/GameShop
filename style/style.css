@@ -1,0 +1,95 @@
+input,
+textarea {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+#contact {
+  background-color: black;
+  color: aliceblue;
+}
+
+#button {
+  background-color: green;
+  color: white;
+}
+
+input {
+  display: flex;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+form {
+  margin-top: 100px;
+}
+
+div {
+  background-color: white;
+  padding: 10px;
+  color: black;
+}
+
+/* Products Styling */
+body {
+  text-align: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+}
+#ps4 {
+  background-color: blue;
+  color: white;
+}
+#xbox {
+  background-color: green;
+  color: white;
+}
+#nintendo {
+  background-color: red;
+  color: white;
+}
+#computer {
+  background-color: purple;
+  color: white;
+}
+
+#ps4:hover {
+  background-color: white;
+  color: blue;
+}
+#xbox:hover {
+  background-color: white;
+  color: green;
+}
+#nintendo:hover {
+  background-color: white;
+  color: red;
+}
+#computer:hover {
+  background-color: white;
+  color: purple;
+}
+a:hover {
+  text-decoration: none;
+}
+
+

@@ -27,19 +27,16 @@
   echo '<h2>The 3 best sellers :</h2>';
 
   if ($db_found) {
-    // echo "$db_name found!<br>";
     // Prepare the query:
-    $query = 'SELECT  FROM games ORDER BY n_purchase LIMIT 3';
-    SELECT movies.title, directors.first_name, movies.release_year
-FROM movies
-INNER JOIN directors ON directors.director_id=movies.directorID;
+    $query = 'SELECT games.title, games.image FROM games INNER JOIN purchase ON purchase.id_purchase=games.id_purchase LIMIT 3';
     // Send the query to the DB
+
     $results = mysqli_query($conn, $query);
-    // $db_record = mysqli_fetch_assoc($results);
-    // $db_record2 = mysqli_fetch_assoc($results);
+
     while ($db_record = mysqli_fetch_assoc($results)) {
       echo '<br>';
       echo $db_record['title'] . '<br>';
+      echo '<img height="300px" width="200px" src="images/' . $db_record['image'] . '">' . '<br>';
     }
   } else {
     echo "$db_name not found!";
