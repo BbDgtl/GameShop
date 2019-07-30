@@ -59,9 +59,6 @@
       </div>
     </nav>
 
-
-
-
   </header>
   <main>
     <h1>Products Page</h1>
